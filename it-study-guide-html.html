@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Essentials Study Guide</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #333;
+        }
+        
+        .section-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+            color: #111827;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .topic-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .topic-content {
+            padding-left: 1rem;
+        }
+        
+        ul, ol {
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtopic {
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .description {
+            margin-bottom: 1rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 2rem; font-weight: bold; margin-bottom: 2rem;">IT Essentials Comprehensive Study Guide</h1>
+
+    <div class="section-card">
+        <div class="card-header">
+            <h2 class="card-title">1. Core Concepts & Safety</h2>
+        </div>
+        <div class="card-content">
+            <div class="topic-title">ESD Protection & Component Safety</div>
+            <div class="topic-content">
+                <p class="description">Electrostatic Discharge (ESD) represents a critical risk to computer components, with different voltage thresholds:</p>
+                <ul>
+                    <li>30 Volts: Minimum threshold for component damage. Most dangerous because it's undetectable but can cause latent damage that appears later.</li>
+                    <li>3,000 Volts: Common damage level during routine handling. Can instantly destroy sensitive components.</li>
+                    <li>10,000+ Volts: Human-detectable static shock level. While most noticeable, damage has already occurred at lower levels.</li>
+                </ul>
+
+                <div class="subtopic">Core Components:</div>
+                <ul>
+                    <li>
+                        <strong>CPU (Central Processing Unit):</strong>
+                        <p>The processor requires specific installation procedures:</p>
+                        <ul>
+                            <li>Proper alignment with socket (matching arrows)</li>
+                            <li>Clean surface for thermal paste application</li>
+                            <li>Correct mounting pressure for heat sink</li>
+                            <li>Adequate cooling solution rated for TDP</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>RAM (Random Access Memory):</strong>
+                        <p>Temporary storage with specific considerations:</p>
+                        <ul>
+                            <li>Voltage requirements (DDR4: 1.2V, DDR3: 1.5V)</li>
+                            <li>No backward compatibility between generations</li>
+                            <li>Proper seating in slots (clicks both sides)</li>
+                            <li>Matching pairs for dual-channel operation</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional sections follow the same pattern -->
+    <div class="section-card">
+        <div class="card-header">
+            <h2 class="card-title">2. Power Systems and Connections</h2>
+        </div>
+        <div class="card-content">
+            <div class="topic-title">Power Supply Standards</div>
+            <div class="topic-content">
+                <ul>
+                    <li>
+                        <strong>AC/DC Conversion:</strong>
+                        <p>Power Supply Unit (PSU) converts household AC (110-240V) to multiple DC voltages:</p>
+                        <ul>
+                            <li>3.3V & 5V: Digital circuits, USB, SATA devices</li>
+                            <li>12V: Motors, fans, high-power components</li>
+                            <li>Efficiency ratings (80 Plus Bronze to Titanium)</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="subtopic">Connector Types:</div>
+                <ul>
+                    <li>Molex: 4-pin legacy connector for HDDs/optical drives</li>
+                    <li>SATA: 15-pin power connector for modern drives</li>
+                    <li>PCIe 6/8-pin: High-performance GPU power</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="card-header">
+            <h2 class="card-title">3. Memory Standards and Interfaces</h2>
+        </div>
+        <div class="card-content">
+            <div class="topic-title">RAM Specifications</div>
+            <div class="topic-content">
+                <p class="description">Different RAM generations have specific characteristics that affect compatibility and performance:</p>
+                <ul>
+                    <li>
+                        <strong>DDR Specifications:</strong>
+                        <ul>
+                            <li>DDR2: 240-pin, 1.8V operating voltage</li>
+                            <li>DDR3: 240-pin, 1.5V operating voltage</li>
+                            <li>DDR4: 288-pin, 1.2V operating voltage</li>
+                            <li>DDRSRAM: 184-pin (older standard)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Compatibility Factors:</strong>
+                        <ul>
+                            <li>Motherboard physical slot type</li>
+                            <li>Chipset support for specific generations</li>
+                            <li>No backward compatibility between generations</li>
+                            <li>Voltage requirements must match exactly</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="card-header">
+            <h2 class="card-title">4. Storage Technologies</h2>
+        </div>
+        <div class="card-content">
+            <div class="topic-title">Modern Storage Solutions</div>
+            <div class="topic-content">
+                <ul>
+                    <li>
+                        <strong>Enterprise HDDs:</strong>
+                        <p>3.5" 15k RPM drives designed for RAID:</p>
+                        <ul>
+                            <li>Higher reliability rating (MTBF)</li>
+                            <li>Enhanced error correction</li>
+                            <li>24/7 operation capability</li>
+                            <li>Advanced vibration resistance</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>NVMe SSDs:</strong>
+                        <ul>
+                            <li>PCIe 4.0 speeds up to 7000+ MB/s</li>
+                            <li>Lower latency than SATA</li>
+                            <li>Direct CPU connection</li>
+                            <li>Ideal for operating systems</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="subtopic">RAID Configurations:</div>
+                <ul>
+                    <li>
+                        <strong>RAID 0 (Striping):</strong>
+                        <ul>
+                            <li>Enhanced performance</li>
+                            <li>No data redundancy</li>
+                            <li>Full capacity utilization</li>
+                            <li>Risk of total data loss</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>RAID 1 (Mirroring):</strong>
+                        <ul>
+                            <li>Complete data redundancy</li>
+                            <li>Simple implementation</li>
+                            <li>50% capacity efficiency</li>
+                            <li>Improved read performance</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="card-header">
+            <h2 class="card-title">5. Network Infrastructure</h2>
+        </div>
+        <div class="card-content">
+            <div class="topic-title">Network Types and Topologies</div>
+            <div class="topic-content">
+                <ul>
+                    <li>
+                        <strong>Network Categories:</strong>
+                        <ul>
+                            <li>PAN (Personal Area Network): Bluetooth, range <10m</li>
+                            <li>LAN (Local Area Network): Building or campus</li>
+                            <li>MAN (Metropolitan Area Network): City-wide</li>
+                            <li>WAN (Wide Area Network): Global connectivity</li>
+                            <li>VLAN (Virtual LAN): Logical segmentation</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Network Devices:</strong>
+                        <ul>
+                            <li>Switch: Layer 2 device for local connectivity</li>
+                            <li>Router: Layer 3 device for network routing</li>
+                            <li>Access Point: Wireless network extension</li>
+                            <li>Modem: Internet connectivity conversion</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="subtopic">Connection Technologies:</div>
+                <ul>
+                    <li>
+                        <strong>Fiber Optic:</strong>
+                        <ul>
+                            <li>Speeds up to 10+ Gbps</li>
+                            <li>Immune to electromagnetic interference</li>
+                            <li>Long-distance capability</li>
+                            <li>Single-mode and multi-mode options</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Copper-based:</strong>
+                        <ul>
+                            <li>Cat5e: Up to 1 Gbps</li>
+                            <li>Cat6: Up to 10 Gbps (shorter distances)</li>
+                            <li>Cat6a: Up to 10 Gbps (full distance)</li>
+                            <li>Cat7: Up to 40 Gbps (specialized)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="card-header">
+            <h2 class="card-title">6. Professional Troubleshooting</h2>
+        </div>
+        <div class="card-content">
+            <div class="topic-title">Cisco's Six-Step Process</div>
+            <div class="topic-content">
+                <ol>
+                    <li>
+                        <strong>Identify the Problem:</strong>
+                        <ul>
+                            <li>Gather user reports</li>
+                            <li>Document symptoms</li>
+                            <li>Check error messages</li>
+                            <li>Review system logs</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Establish Theory:</strong>
+                        <ul>
+                            <li>Consider common causes</li>
+                            <li>Check physical connections</li>
+                            <li>Review similar cases</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Test Theory:</strong>
+                        <ul>
+                            <li>Start with simplest solution</li>
+                            <li>Test one component at a time</li>
+                            <li>Document results</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Plan of Action:</strong>
+                        <ul>
+                            <li>Develop solution strategy</li>
+                            <li>Create backup plan</li>
+                            <li>Document proposed steps</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Verify Solution:</strong>
+                        <ul>
+                            <li>Test full functionality</li>
+                            <li>Document results</li>
+                            <li>Verify with user</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Document Findings:</strong>
+                        <ul>
+                            <li>Record all steps taken</li>
+                            <li>Note successful solution</li>
+                            <li>Update knowledge base</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <div class="subtopic">Diagnostic Tools:</div>
+                <ul>
+                    <li>
+                        <strong>Windows Event Viewer:</strong>
+                        <ul>
+                            <li>System logs for hardware events</li>
+                            <li>Application logs for software issues</li>
+                            <li>Security logs for access events</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>POST Diagnostics:</strong>
+                        <ul>
+                            <li>Single beep: Normal boot</li>
+                            <li>Multiple beeps: Hardware issue</li>
+                            <li>Continuous beeps: Power/memory failure</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="card-header">
+            <h2 class="card-title">7. Maintenance and Security</h2>
+        </div>
+        <div class="card-content">
+            <div class="topic-title">Preventive Maintenance</div>
+            <div class="topic-content">
+                <ul>
+                    <li>
+                        <strong>Physical Maintenance:</strong>
+                        <ul>
+                            <li>Regular dust cleaning (hold fan blades during cleaning)</li>
+                            <li>Component inspection</li>
+                            <li>Temperature monitoring</li>
+                            <li>Ventilation verification</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Software Maintenance:</strong>
+                        <ul>
+                            <li>Operating system updates</li>
+                            <li>Driver updates</li>
+                            <li>Disk health monitoring</li>
+                            <li>Security scans</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="subtopic">Security Features:</div>
+                <ul>
+                    <li>
+                        <strong>LoJack for Laptops:</strong>
+                        <ul>
+                            <li>BIOS-level protection</li>
+                            <li>Remote tracking capability</li>
+                            <li>Data deletion options</li>
+                            <li>Recovery assistance</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="card-header">
+            <h2 class="card-title">8. Advanced Technologies</h2>
+        </div>
+        <div class="card-content">
+            <div class="topic-title">Processor Architectures</div>
+            <div class="topic-content">
+                <ul>
+                    <li>
+                        <strong>RISC Architecture:</strong>
+                        <ul>
+                            <li>Simple instruction set</li>
+                            <li>Single-cycle execution</li>
+                            <li>Power efficient</li>
+                            <li>Common in mobile devices</li>
+                            <li>Examples: ARM, RISC-V</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>CISC Architecture:</strong>
+                        <ul>
+                            <li>Complex instruction set</li>
+                            <li>Multi-cycle execution</li>
+                            <li>Higher performance</li>
+                            <li>Desktop/server focus</li>
+                            <li>Examples: x86, x86_64</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="subtopic">High-Performance Components:</div>
+                <ul>
+                    <li>
+                        <strong>Graphics Processing:</strong>
+                        <ul>
+                            <li>Dual 8-pin power connectors</li>
+                            <li>PCIe x16 interface</li>
+                            <li>Advanced cooling requirements</li>
+                            <li>Multi-GPU support capabilities</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="card-header">
+            <h2 class="card-title">9. Additional Technical Specifications</h2>
+        </div>
+        <div class="card-content">
+            <div class="topic-title">Motherboard Form Factors and Standards</div>
+            <div class="topic-content">
+                <ul>
+                    <li>
+                        <strong>Form Factor Evolution:</strong>
+                        <ul>
+                            <li>AT (Advanced Technology):
+                                <p>Legacy standard with no soft-off capability. Power switch directly interrupts AC power. No standardized power connector layout.</p>
+                            </li>
+                            <li>ATX (Advanced Technology Extended):
+                                <p>Modern standard supporting soft-off functionality. Standardized 20/24-pin power connector. Improved cooling design with CPU near power supply.</p>
+                            </li>
+                            <li>Micro-ATX:
+                                <p>Backward compatible with ATX. Reduced expansion slots but same mounting points. Popular in business and home systems.</p>
+                            </li>
+                            <li>EPS12V:
+                                <p>Server standard with enhanced power delivery. Additional 8-pin CPU power connector. Supports multiple processors and advanced cooling.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="subtopic">Interface Types and Standards:</div>
+                <ul>
+                    <li>
+                        <strong>Storage Interfaces:</strong>
+                        <ul>
+                            <li>SATA (Serial ATA):
+                                <p>Modern interface supporting hot-swapping. Data and power connections are separate. SATA III provides 6 Gbps bandwidth.</p>
+                            </li>
+                            <li>IDE/PATA:
+                                <p>Legacy 40-pin interface. Master/Slave configuration required. Maximum transfer rate of 133 MB/s.</p>
+                            </li>
+                            <li>M.2:
+                                <p>Form factor supporting both SATA and PCIe protocols. Various lengths (2242, 2280) for different applications.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Power Connections:</strong>
+                        <ul>
+                            <li>ATX 24-pin:
+                                <p>Main motherboard power. Supplies 3.3V, 5V, and 12V rails. Backward compatible with 20-pin connections.</p>
+                            </li>
+                            <li>CPU Power (4/8-pin):
+                                <p>Dedicated CPU power delivery. Required for stable operation of modern processors. Additional connectors for high-power systems.</p>
+                            </li>
+                            <li>PCIe Power (6/8-pin):
+                                <p>Graphics card power delivery. Each 8-pin connector can provide up to 150W. Combined with slot power for total GPU power delivery.</p>
+                            </li>
+                            <li>Molex:
+                                <p>Legacy 4-pin connector. Provides 5V and 12V. Still used for fans, drives, and some accessories.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="card-header">
+            <h2 class="card-title">10. Extended Safety and Professional Practices</h2>
+        </div>
+        <div class="card-content">
+            <div class="topic-title">Comprehensive Safety Protocols</div>
+            <div class="topic-content">
+                <ul>
+                    <li>
+                        <strong>Workspace Requirements:</strong>
+                        <ul>
+                            <li>Temperature Control:
+                                <p>45-90°F (7-32°C) operating range. Critical for preventing condensation and thermal stress. Humidity should be maintained between 20-80%.</p>
+                            </li>
+                            <li>ESD Protection:
+                                <p>Anti-static mat resistance: 1M Ω to 1G Ω. Wrist strap should have 1M Ω resistor. Ground point must be verified.</p>
+                            </li>
+                            <li>Physical Safety:
+                                <p>Sharp edge protection using electrical tape. Proper lifting techniques (bend knees, straight back). Adequate lighting (minimum 300 lux).</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Professional Documentation Requirements:</strong>
+                        <ul>
+                            <li>Service Documentation:
+                                <p>Written authorization required before work begins. Must include scope of work, potential risks, and liability limitations.</p>
+                            </li>
+                            <li>Data Backup:
+                                <p>User-created files only: Documents, settings, browser data, custom application data. Verify backup integrity before proceeding.</p>
+                            </li>
+                            <li>Work Orders:
+                                <p>Detailed description of issues, planned actions, and expected outcomes. Time estimates and potential complications must be noted.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="subtopic">Advanced Diagnostic Procedures:</div>
+                <ul>
+                    <li>
+                        <strong>Event Viewer Analysis:</strong>
+                        <ul>
+                            <li>System Log:
+                                <p>Hardware and driver events. Critical for troubleshooting device issues. Contains startup and shutdown information.</p>
+                            </li>
+                            <li>Application Log:
+                                <p>Program-specific errors and warnings. Used for software troubleshooting. Shows installation and update history.</p>
+                            </li>
+                            <li>Security Log:
+                                <p>Login attempts and security policy changes. Essential for security auditing. Records system access events.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>BIOS/UEFI Diagnostics:</strong>
+                        <ul>
+                            <li>POST Codes:
+                                <p>One short beep indicates successful boot. Continuous beeps suggest RAM failure. Pattern beeps identify specific hardware issues.</p>
+                            </li>
+                            <li>Hardware Monitor:
+                                <p>CPU and system temperatures. Fan speeds and voltage levels. Critical for system stability assessment.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <div class="card-header">
+            <h2 class="card-title">11. Component Specifications and Compatibility</h2>
+        </div>
+        <div class="card-content">
+            <div class="topic-title">Memory Technologies and Standards</div>
+            <div class="topic-content">
+                <ul>
+                    <li>
+                        <strong>RAM Specifications Detail:</strong>
+                        <ul>
+                            <li>DDR2:
+                                <p>240-pin, 1.8V operating voltage. Speed grades: PC2-4200 through PC2-8500. Maximum theoretical bandwidth: 8533 MB/s.</p>
+                            </li>
+                            <li>DDR3:
+                                <p>240-pin, 1.5V operating voltage. Speed grades: PC3-8500 through PC3-24000. Maximum theoretical bandwidth: 24000 MB/s.</p>
+                            </li>
+                            <li>DDR4:
+                                <p>288-pin, 1.2V operating voltage. Speed grades: PC4-17000 through PC4-25600. Maximum theoretical bandwidth: 25600 MB/s.</p>
+                            </li>
+                            <li>RDRAM:
+                                <p>184-pin, legacy standard. Required terminators in empty slots. Used in older Intel platforms.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="subtopic">CPU Installation and Cooling:</div>
+                <ul>
+                    <li>
+                        <strong>Socket Types:</strong>
+                        <ul>
+                            <li>PGA (Pin Grid Array):
+                                <p>Pins on CPU, sockets on motherboard. Used by AMD. Requires careful handling to prevent pin damage.</p>
+                            </li>
+                            <li>LGA (Land Grid Array):
+                                <p>Pins in socket, pads on CPU. Used by Intel. Socket cover protects pins. Requires proper alignment.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Cooling Solutions:</strong>
+                        <ul>
+                            <li>Passive Cooling:
+                                <p>Heat sinks use thermal conduction and convection. No moving parts. Suitable for low-power components.</p>
+                            </li>
+                            <li>Active Cooling:
+                                <p>Fans or liquid cooling. Requires power connection. More effective for high-TDP processors.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</html>
